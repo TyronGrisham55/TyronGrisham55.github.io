@@ -17,7 +17,7 @@
 			position: absolute;
 			top: 100px;
 			/* Change me! */
-			left: 0px;
+			left: 200px;
 		}
 
 		.board {
@@ -47,7 +47,8 @@
 
 			// Every 50 milliseconds, call the update Function (see below)
 			setInterval(update, 50);
-
+			function moveBoxTo(newPositionX) {
+				box.css("left", newPositionX);
 			// Every time the box is clicked, call the handleBoxClick Function (see below)
 			box.on('click', handleBoxClick);
 
@@ -66,7 +67,7 @@
 			//////////////////////////////////////////////////////////////////
 
 			// TODO 2 - Variable declarations 
-
+var positionx = 0
 
 
 			/* 
@@ -75,6 +76,8 @@
 			turn it around! 
 			*/
 			function update() {
+				moveBoxTo(positionx)
+				
 
 
 			};
