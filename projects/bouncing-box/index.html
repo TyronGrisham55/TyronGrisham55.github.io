@@ -75,8 +75,15 @@ var positionx = 0
 			it should move the Box to a new location. If the box drifts off the screen
 			turn it around! 
 			*/
-			function update() {
-				moveBoxTo(positionx)
+			function update() { want to increase the value of positionx by 10
+				moveBoxTo(positionx);
+				myVariable = myVariable + 10;
+
+				positionx = 10 + 10; // positionX = 20
+				moveBoxTo(positionX);
+
+				positionx = 20 + 10; // positionX = 30
+				moveBoxTo (positionx);
 				
 
 
