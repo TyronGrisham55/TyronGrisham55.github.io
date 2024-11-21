@@ -73,16 +73,16 @@ game.checkCirclePosition(circles[i])
                 circle.x = 0;
             }
 
-            if(circle.Y > canvas.height){
-                circle.Y=0;
+            if(circle.y > canvas.height){
+                circle.y=0;
             }
             
             if(circle.x < 0){
                 circle.x = canvas.width;
             }
 
-            if(circle.Y < 0){
-                circle.Y = canvas.height;
+            if(circle.y < 0){
+                circle.y = canvas.height;
             }
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
             
