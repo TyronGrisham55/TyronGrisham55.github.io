@@ -21,7 +21,7 @@ var init = function (window) {
         
         // TODO 1 : Declare and initialize our variables
 
-var circle
+var circle;
 var circles = [];
         // TODO 2 : Create a function that draws a circle 
         function drawCircle(){
@@ -32,12 +32,8 @@ var circles = [];
                                  }
 
         // TODO 3 / 7 : Call the drawCircle() function 
-        for (var loopsCompleted = 0; loopsCompleted < 100; loopsCompleted++) {
-            
-            // do something
-
-            drawCircle()
-
+        for (var i = 0; i <= 100; i++ ) {
+            drawCircle(i);
         }
 
         ////////////////////////////////////////////////////////////
@@ -51,11 +47,10 @@ var circles = [];
         */
         function update() {
             // TODO 4 : Update the circle's position //
-physikz.updatePosition(circles[0]);
-physikz.updatePosition(circles[1]);
-physikz.updatePosition(circles[2]);
-physikz.updatePosition(circles[3]);
-physikz.updatePosition(circles[4]);
+for (var i = 0; i <= 100; i++){
+physikz.updatePosition(circles[i])
+game.checkCirclePosition(circles[i])
+                                        }
             
             // TODO 5 / 10 : Call game.checkCirclePosition() on your circles.
            
@@ -77,7 +72,18 @@ physikz.updatePosition(circles[4]);
             if ( circle.x > canvas.width ) {
                 circle.x = 0;
             }
+
+            if(circle.Y > canvas.height){
+                circle.Y=0;
+            }
             
+            if(circle.x < 0){
+                circle.x = canvas.width;
+            }
+
+            if(circle.Y < 0){
+                circle.Y = canvas.height;
+            }
             // TODO 6 : YOUR CODE STARTS HERE //////////////////////
             
 
