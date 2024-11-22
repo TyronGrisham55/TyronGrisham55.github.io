@@ -74,7 +74,7 @@ game.checkCirclePosition(circles[i])
             }
 
             if(circle.y > canvas.height){
-                circle.y=0;
+                circle.y = 0;
             }
             
             if(circle.x < 0){
